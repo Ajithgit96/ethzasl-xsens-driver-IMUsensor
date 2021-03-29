@@ -1,5 +1,17 @@
 
-As this is a old driver a minor change is necessary to make it compatible with tf2 
+As this is a old driver a minor change is necessary to make it compatible with tf2.
+
+Line number 7 in launch/xsens_driver.launch file must be changed from 
+
+<arg name="frame_id" default="/imu" doc="frame id of the IMU"/>
+
+to 
+
+<arg name="frame_id" default="imu" doc="frame id of the IMU"/>
+
+/ must be removed infront of "imu" as per naming rules of tf2. This change is already made in this project.
+
+Note: The same frame id name "imu" must be used in urdf configuration in cartographer project for 3D mapping.
 
 
 Source:
