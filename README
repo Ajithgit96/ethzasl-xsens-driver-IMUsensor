@@ -1,3 +1,9 @@
+
+As this is a old driver a minor change is necessary to make it compatible with tf2 
+
+
+Source:
+
 ROS Driver for XSens MT/MTi/MTi-G devices.
 
 See: http://ros.org/wiki/ethzasl_xsens_driver
